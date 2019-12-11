@@ -1,1 +1,335 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #242331;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headerContainer {
+  height: 10%;
+  width: 80%;
+  margin-bottom: 2%;
+}
+.headerContainer .topNav {
+  background-color: #333;
+  overflow: hidden;
+  border: solid 6px #a27035;
+  border-style: ridge;
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+}
+.headerContainer .topNav a {
+  color: #a27035;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  width: 20%;
+}
+.topcontainer {
+  display: flex;
+  border: solid 3px #a27035;
+  justify-content: space-around;
+  width: 80%;
+  background-color: #533e2d;
+  align-items: center;
+}
+.topcontainer .one {
+  border: solid 5px #a27035;
+  border-style: groove;
+  width: 16%;
+  height: 65vh;
+  background: #ddca7d;
+  color: #242331;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 2%;
+}
+.topcontainer .one h2 {
+  font-size: 100%;
+}
+.topcontainer .one li {
+  padding: 9%;
+  text-align: center;
+  padding: 7%;
+}
+.topcontainer .two {
+  border: solid 6px #533e2d;
+  border-style: groove;
+}
+.topcontainer .three {
+  border: solid 6px #533e2d;
+  border-style: groove;
+  width: 16%;
+  height: 65vh;
+  background: #ddca7d;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 2%;
+}
+.topcontainer .three li {
+  padding: 20%;
+}
+.aboutmeContainer {
+  background: #b88b4a;
+  border: solid 3px #a27035;
+  color: #242331;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 2% 0%;
+}
+.aboutmeContainer .six {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.aboutmeContainer .six h2 {
+  font-size: 2em;
+  margin: 4% 0%;
+  border-bottom: solid 2px black;
+  text-align: center;
+}
+.aboutmeContainer .six p {
+  font-size: 1.2em;
+  padding: 3%;
+}
+.aboutmeContainer .seven {
+  border-left: black solid 3px;
+  width: 49%;
+  padding: 2%;
+}
+.aboutmeContainer .seven h2 {
+  font-size: 2em;
+  margin: 3% 0%;
+  border-bottom: solid 2px black;
+  text-align: center;
+}
+.aboutmeContainer .seven p {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 3%;
+}
+.middleContainer {
+  border: solid 3px #a27035;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #533e2d;
+}
+.middleContainer .four {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 0%;
+  background: #533e2d;
+}
+.middleContainer .four .picone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 3em;
+  border: black solid 2px;
+}
+.middleContainer .four .picone p {
+  width: 70%;
+  text-align: center;
+}
+.pictwo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 3em;
+  text-align: center;
+  border-right: solid 2px black;
+  background: #533e2d;
+}
+.pictwo p {
+  width: 70%;
+  text-align: center;
+}
+.picthree {
+  border: black solid 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 3em;
+  text-align: center;
+  background: #533e2d;
+}
+.picthree p {
+  width: 70%;
+  text-align: center;
+}
+.picfour {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 3.3em;
+  text-align: center;
+  border-right: solid 3px black;
+  background: #533e2d;
+}
+.picfour p {
+  width: 70%;
+  text-align: center;
+}
+.picfour h2 {
+  font-size: 56em;
+}
+.picfive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 3.2em;
+  text-align: center;
+  border: solid 3px black;
+}
+.picfive p {
+  width: 70%;
+  text-align: center;
+}
