@@ -1,0 +1,115 @@
+.topcontainer {
+  display: flex;
+  border: solid 3px #a27035;
+  justify-content: space-around;
+  width: 80%;
+  background-color: #533e2d;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .topcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.topcontainer .one {
+  border: solid 5px #a27035;
+  border-style: groove;
+  width: 16%;
+  height: 65vh;
+  background: #ddca7d;
+  color: #242331;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 2%;
+}
+@media (max-width: 1024px) {
+  .topcontainer .one {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .topcontainer .one {
+    display: flex;
+    flex-direction: column;
+    width: 77%;
+    height: 23%;
+  }
+}
+@media (max-width: 768px) {
+  .topcontainer .one ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    padding: 2%;
+  }
+}
+.topcontainer .one ul li {
+  padding: 9%;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .topcontainer .one ul li {
+    padding: 8%;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .topcontainer .one ul li {
+    border: solid 3px blue;
+    width: 90%;
+    padding: 0%;
+  }
+}
+.topcontainer .one h2 {
+  font-size: 1.8em;
+  margin-bottom: 5%;
+  border-bottom: solid 1px black;
+}
+.topcontainer .two {
+  border: solid 6px #533e2d;
+  border-style: groove;
+}
+.topcontainer .three {
+  border: solid 6px #533e2d;
+  border-style: groove;
+  width: 16%;
+  height: 65vh;
+  background: #ddca7d;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 2%;
+}
+@media (max-width: 1024px) {
+  .topcontainer .three {
+    width: 32%;
+  }
+}
+@media (max-width: 768px) {
+  .topcontainer .three {
+    width: 94%;
+    height: 25%;
+  }
+}
+.topcontainer .three h2 {
+  font-size: 1.5em;
+  border-bottom: solid 1px black;
+  color: black;
+}
+@media (max-width: 1024px) {
+  .topcontainer .three h2 {
+    margin-bottom: 5%;
+  }
+}
+.topcontainer .three li {
+  padding: 10%;
+  color: #242331;
+}
+@media (max-width: 1024px) {
+  .topcontainer .three li {
+    text-align: center;
+  }
+}
