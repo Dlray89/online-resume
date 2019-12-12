@@ -137,6 +137,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Baskervville', serif;
 }
 .headerContainer {
   height: 10%;
@@ -152,11 +153,6 @@ body {
   height: 9vh;
   display: flex;
   justify-content: space-between;
-}
-@media (max-height: 768px) {
-  .headerContainer .topNav {
-    border: solid 2px red;
-  }
 }
 .headerContainer .topNav a {
   color: #a27035;
@@ -178,7 +174,6 @@ body {
 }
 @media (max-width: 768px) {
   .topcontainer {
-    border: solid 2px red;
     display: flex;
     flex-direction: column;
   }
@@ -202,7 +197,6 @@ body {
 }
 @media (max-width: 768px) {
   .topcontainer .one {
-    border: solid 2px green;
     display: flex;
     flex-direction: column;
     width: 77%;
@@ -217,38 +211,33 @@ body {
     padding: 2%;
   }
 }
-.topcontainer .one h2 {
-  font-size: 1.8em;
-  margin-bottom: 5%;
-  border-bottom: solid 1px black;
-}
-.topcontainer .one li {
+.topcontainer .one ul li {
   padding: 9%;
   text-align: center;
 }
 @media (max-width: 1024px) {
-  .topcontainer .one li {
+  .topcontainer .one ul li {
     padding: 8%;
     text-align: center;
   }
 }
-@media (max-width: 1024px) and (max-width: 768px) {
-  .topcontainer .one li {
+@media (max-width: 768px) {
+  .topcontainer .one ul li {
     border: solid 3px blue;
     width: 90%;
     padding: 0%;
   }
 }
+.topcontainer .one h2 {
+  font-size: 1.8em;
+  margin-bottom: 5%;
+  border-bottom: solid 1px black;
+}
 .topcontainer .two {
   border: solid 6px #533e2d;
   border-style: groove;
 }
-@media (max-width: 768px) {
-  .topcontainer .two {
-    border: solid 6px red;
-  }
-}
-.three {
+.topcontainer .three {
   border: solid 6px #533e2d;
   border-style: groove;
   width: 16%;
@@ -261,40 +250,40 @@ body {
   padding: 2% 2%;
 }
 @media (max-width: 1024px) {
-  .three {
+  .topcontainer .three {
     width: 32%;
   }
 }
 @media (max-width: 768px) {
-  .three {
-    border: orange 3px solid;
+  .topcontainer .three {
     width: 94%;
     height: 25%;
   }
 }
-h2 {
+.topcontainer .three h2 {
   font-size: 1.5em;
   border-bottom: solid 1px black;
   color: black;
 }
 @media (max-width: 1024px) {
-  h2 {
+  .topcontainer .three h2 {
     margin-bottom: 5%;
   }
 }
-li {
+.topcontainer .three li {
   padding: 10%;
   color: #242331;
 }
 @media (max-width: 1024px) {
-  li {
+  .topcontainer .three li {
     text-align: center;
   }
 }
 .aboutmeContainer {
-  background: #b88b4a;
-  border: solid 3px #a27035;
-  color: #242331;
+  background: #333;
+  border: solid 6px #a27035;
+  border-style: groove;
+  color: #a27035;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -307,139 +296,43 @@ li {
     display: flex;
     flex-direction: column;
   }
-  .aboutmeContainer .six {
-    width: 49%;
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-  }
-  .aboutmeContainer .six h2 {
-    font-size: 2em;
-    margin: 4% 0%;
-    border-bottom: solid 2px black;
-    text-align: center;
-  }
-  .aboutmeContainer .six p {
-    font-size: 1.2em;
-    padding: 3%;
-  }
-  .aboutmeContainer .seven {
-    border-left: black solid 3px;
-    width: 49%;
-    padding: 2%;
-  }
-  .aboutmeContainer .middleContainer {
-    border: solid 3px #a27035;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #533e2d;
-    width: 80%;
-  }
-  .aboutmeContainer .middleContainer .four {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 0%;
-    background: #533e2d;
-  }
-  .aboutmeContainer .middleContainer .four .picone {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 3em;
-    border: black solid 2px;
-  }
-  .aboutmeContainer .middleContainer .four .picone p {
-    width: 70%;
-    text-align: center;
-  }
-  .aboutmeContainer .pictwo {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    font-size: 3em;
-    text-align: center;
-    border-right: solid 2px black;
-    background: #533e2d;
-  }
-  .aboutmeContainer .pictwo p {
-    width: 70%;
-    text-align: center;
-  }
-  .aboutmeContainer .picthree {
-    border: black solid 2px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 3em;
-    text-align: center;
-    background: #533e2d;
-  }
-  .aboutmeContainer .picthree p {
-    width: 70%;
-    text-align: center;
-  }
-  .aboutmeContainer .picfour {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    font-size: 3.3em;
-    text-align: center;
-    border-right: solid 3px black;
-    background: #533e2d;
-  }
-  .aboutmeContainer .picfour p {
-    width: 70%;
-    text-align: center;
-  }
-  .aboutmeContainer .picfour h2 {
-    font-size: 56em;
-  }
-  .aboutmeContainer .picfive {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 3.2em;
-    text-align: center;
-    border: solid 3px black;
-  }
-  .aboutmeContainer .picfive p {
-    width: 70%;
-    text-align: center;
-  }
 }
-@media (max-width: 768px) and (max-width: 768px) {
+.aboutmeContainer .six {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+@media (max-width: 768px) {
   .aboutmeContainer .six {
-    border: orange 3px solid;
     width: 94%;
     height: 50%;
     font-size: 0.9em;
   }
 }
-@media (max-width: 768px) and (max-width: 1024px) {
+.aboutmeContainer .six h2 {
+  font-size: 2em;
+  margin: 4% 0%;
+  border-bottom: solid 2px black;
+  text-align: center;
+}
+.aboutmeContainer .six p {
+  font-size: 1.2em;
+  padding: 3%;
+}
+.aboutmeContainer .seven {
+  border-left: black solid 3px;
+  width: 49%;
+  padding: 2%;
+}
+@media (max-width: 1024px) {
   .aboutmeContainer .seven {
     padding: 2%;
     border-left: black 3px solid;
   }
-  .aboutmeContainer .seven li {
-    padding: 4.4%;
-  }
-  .aboutmeContainer .seven h2 {
-    font-size: 2em;
-    margin: 3% 0%;
-    border-bottom: solid 2px black;
-    text-align: center;
-  }
-  .aboutmeContainer .seven p {
-    font-size: 1.2em;
-    text-align: center;
-    padding: 3%;
-  }
 }
-@media (max-width: 768px) and (max-width: 1024px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .aboutmeContainer .seven {
-    border: orange 3px solid;
     width: 94%;
     height: 60%;
     font-size: 0.9em;
@@ -447,55 +340,151 @@ li {
     align-items: center;
   }
 }
-@media (max-width: 768px) and (max-width: 1024px) and (max-width: 768px) {
-  .aboutmeContainer .seven li {
-    border: orange 3px solid;
-  }
+.aboutmeContainer .seven li {
+  padding: 4.4%;
 }
-@media (max-width: 768px) and (max-width: 1024px) and (max-width: 768px) {
+.aboutmeContainer .seven h2 {
+  font-size: 2em;
+  margin: 19.2% 0% 2% 0%;
+  border-bottom: solid 2px black;
+  text-align: center;
+}
+@media (max-width: 768px) {
   .aboutmeContainer .seven h2 {
     border: orange 3px solid;
     text-align: center;
     height: 20%;
   }
 }
-@media (max-width: 768px) and (max-width: 1024px) {
-  .aboutmeContainer .middleContainer {
+.aboutmeContainer .seven p {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 3%;
+}
+.middleContainer {
+  border: solid 3px #a27035;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #533e2d;
+  width: 80%;
+}
+@media (max-width: 1024px) {
+  .middleContainer {
     width: 80%;
   }
 }
-@media (max-width: 768px) and (max-width: 768px) {
-  .aboutmeContainer .middleContainer {
-    border: blue 3px solid;
-  }
+@media (max-width: 768px) {
 }
-@media (max-width: 768px) and (max-width: 1024px) {
-  .aboutmeContainer .middleContainer .four .picone {
+.middleContainer .four {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 0%;
+  background: #533e2d;
+}
+.middleContainer .four .picone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 3em;
+  border: black solid 2px;
+  font-family: 'Baskervville', serif;
+}
+@media (max-width: 1024px) {
+  .middleContainer .four .picone {
     font-size: 2em;
   }
 }
-@media (max-width: 768px) and (max-width: 768px) {
-  .aboutmeContainer .middleContainer .four .picone {
-    border: blue 3px solid;
-  }
+@media (max-width: 768px) {
 }
-@media (max-width: 768px) and (max-width: 1024px) {
-  .aboutmeContainer .pictwo {
+.middleContainer .four .picone p {
+  width: 70%;
+  text-align: center;
+}
+.middleContainer .four .pictwo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 3em;
+  text-align: center;
+  border-right: solid 2px black;
+  background: #533e2d;
+  font-family: 'Baskervville', serif;
+}
+@media (max-width: 1024px) {
+  .middleContainer .four .pictwo {
     font-size: 2em;
   }
 }
-@media (max-width: 768px) and (max-width: 1024px) {
-  .aboutmeContainer .picthree {
+.middleContainer .four .pictwo p {
+  width: 70%;
+  text-align: center;
+}
+.middleContainer .four .picthree {
+  border: black solid 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 3em;
+  text-align: center;
+  background: #533e2d;
+  font-family: 'Baskervville', serif;
+}
+@media (max-width: 1024px) {
+  .middleContainer .four .picthree {
     font-size: 2em;
   }
 }
-@media (max-width: 768px) and (max-width: 1024px) {
-  .aboutmeContainer .picfour {
+.middleContainer .four .picthree p {
+  width: 70%;
+  text-align: center;
+}
+.middleContainer .four .picfour {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 3.3em;
+  text-align: center;
+  border-right: solid 3px black;
+  background: #533e2d;
+  font-family: 'Baskervville', serif;
+}
+@media (max-width: 1024px) {
+  .middleContainer .four .picfour {
     font-size: 2em;
   }
 }
-@media (max-width: 768px) and (max-width: 1024px) {
-  .aboutmeContainer .picfive {
+.middleContainer .four .picfour h2 {
+  font-size: 56em;
+}
+.middleContainer .four .picfour p {
+  width: 70%;
+  text-align: center;
+}
+.middleContainer .four .picfive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 3.2em;
+  text-align: center;
+  border: solid 3px black;
+}
+@media (max-width: 1024px) {
+  .middleContainer .four .picfive {
     font-size: 2em;
   }
+}
+.middleContainer .four .picfive p {
+  width: 70%;
+  text-align: center;
+  font-family: 'Baskervville', serif;
+}
+.middleContainer .four .careergoalbox {
+  border: solid 3px green;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  padding: 5%;
+  font-family: 'Baskervville', serif;
 }
