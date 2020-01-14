@@ -144,7 +144,7 @@ body {
   margin: 2% 0%;
 }
 .headerContainer .topNav {
-  background-color: #ffdaa2;
+  background: radial-gradient(white, #ffdaa2);
   border-radius: 25px;
   overflow: hidden;
   border: solid 2px #ffdaa2;
@@ -193,6 +193,7 @@ body {
 .maincontainer .introContainer .introtext:hover {
   background: #313131;
   color: #ffdaa2;
+  border: solid 2px #ffdaa2;
 }
 .maincontainer .introContainer .introtext h1 {
   margin-bottom: 2%;
@@ -203,34 +204,75 @@ body {
   border-radius: 30px;
   padding: 1%;
   width: 100%;
+  box-sizing: border-box;
 }
-.maincontainer .skillCertContainer .skills {
-  background: #ffdaa2;
+.maincontainer .skillCertContainer .skillCertFlex {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.maincontainer .skillCertContainer .skillCertFlex .skills {
+  background: radial-gradient(white, #ffdaa2);
   border-radius: 30px;
-  width: 100%;
+  width: 48%;
+  box-sizing: border-box;
+  padding: 5%;
 }
-.maincontainer .skillCertContainer .skills h2 {
+.maincontainer .skillCertContainer .skillCertFlex .skills h2 {
   font-size: 2em;
   padding: 2%;
   color: #707070;
+  text-decoration: underline;
+  box-sizing: border-box;
+  text-align: center;
 }
-.maincontainer .skillCertContainer .skills P {
+.maincontainer .skillCertContainer .skillCertFlex .skills P {
   padding: 2%;
   color: #707070;
+  box-sizing: border-box;
+  text-align: center;
 }
-.maincontainer .certContainer {
-  margin-top: 3%;
+.maincontainer .skillCertContainer .skillCertFlex .skills .backgroundTop {
+  background: #707070;
+  border: solid 2px #707070;
+  color: #ffdaa2;
+  padding: 3%;
+  border-radius: 20px;
+}
+.maincontainer .skillCertContainer .certContainer {
   border-radius: 30px;
-  background: #ffdaa2;
+  background: radial-gradient(white, #ffdaa2);
+  width: 48%;
+  box-sizing: border-box;
+  padding: 5%;
+  text-align: center;
 }
-.maincontainer .certContainer h2 {
+.maincontainer .skillCertContainer .certContainer h2 {
   font-size: 2em;
-  padding: 2%;
+  padding: 3%;
   color: #707070;
+  box-sizing: border-box;
+  text-decoration: underline;
 }
-.maincontainer .certContainer P {
+.maincontainer .skillCertContainer .certContainer P {
   padding: 2%;
   color: #707070;
+  box-sizing: border-box;
+}
+.maincontainer .skillCertContainer .certContainer P button {
+  background: #707070;
+  height: 5vh;
+  border-radius: 20px;
+  border: solid 2px #707070;
+  color: #ffdaa2;
+  width: 50%;
+}
+.maincontainer .skillCertContainer .certContainer .backgroundTop {
+  background: #707070;
+  border: solid 2px #707070;
+  color: #ffdaa2;
+  padding: 3%;
+  border-radius: 20px;
 }
 .maincontainer .middleimg {
   margin-top: 3%;
