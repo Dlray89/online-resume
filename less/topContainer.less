@@ -1,116 +1,213 @@
-.topcontainer {
-	display         : flex;
-	border          : solid 3px #a27035;
-	justify-content : space-around;
+
+.maincontainer {
 	width           : 80%;
-	background-color: #533e2d;
+	background-color: #fffdde;
 	align-items     : center;
 
-	   @media(max-width: 768px) {
-		  display       : flex;
-		  flex-direction: column;
-	   }//closes media of topcontainer
-
-
-	.one {
-	  border        : solid 5px #a27035;
-	  border-style  : groove;
-	  width         : 16%;
-	  height        : 65vh;
-	  background    : #ddca7d;
-	  color         : #242331;
-	  display       : flex;
-	  flex-direction: column;
-	  align-items   : center;
-	  padding       : 2% 2%;
-	
-			@media(max-width: 1024px) {
-				width: 30%;
-			}//closes media for .one at 1024px
-	
-			@media(max-width: 768px) {
-				display       : flex;
-				flex-direction: column;
-				width         : 77%;
-				height        : 23%;
-			}//closes  media foe .one at 768px
-
-		ul {
-			@media(max-width: 768px) {
-				display       : flex;
-				flex-direction: column;
-				font-size     : 1em;
-				padding       : 2%;
-				}//closes media for ul at 768px
-
-
-			    li {
-					padding   : 9%;
-					text-align: center;
+	.introContainer{
+		display: flex;
+		background: #fffdde;
 		
-		
-					@media (max-width: 1024px) {
-						padding   : 8%;
-						text-align: center;
-					}//closes media for li at 1024px
-					@media (max-width: 768px) {
-		
-							border : solid 3px blue;
-							width  : 90%;
-							padding: 0%;
-						}//closes media for li at 768px
-					}//close li
-				}//closes ul
-	
-		h2 {
-		  font-size    : 1.8em;
-		  margin-bottom: 5%;
-		  border-bottom: solid 1px black;
-			}//closes h2
-	}//closes .one
 
-	.two {
-		border      : solid 6px #533e2d;
-		border-style: groove;
-	}//closes .two
+		.introPic{
+			width: 50%;
+			padding: 2%;
+			background: #fffdde;
 
-	.three {
-		border        : solid 6px #533e2d;
-		border-style  : groove;
-		width         : 16%;
-		height        : 65vh;
-		background    : #ddca7d;
-		color         : aliceblue;
-		display       : flex;
-		flex-direction: column;
-		align-items   : center;
-		padding       : 2% 2%;
-	
-		    @media (max-width: 1024px) {
-			  width: 32%;
-		}//closes media for .three at 1024px
-	
-		    @media (max-width: 768px) {
-			  width : 94%;
-			  height: 25%;
-		}//closes media for .three at 768px
+			img{
+			width: 100%;
+			height: 100%;
+			border-radius: 20px;
+			}//closes img
 
-		h2 {
-			font-size    : 1.5em;
-			border-bottom: solid 1px black;
-			color        : black;
+		}//closes intrppic
+		.introtext{
+			border: solid 2px #707070;
+			padding: 5%;
+			background: #ffffff;
+			border-radius: 30px;
+			height: 45vh;
+			margin-top: 3%;
+
+			&:hover{
+				background: #313131;
+				color: #ffdaa2;
+				border: solid 2px #ffdaa2;
+			}
+
+			h1{
+				margin-bottom: 2%;
+				font-size: 2em;
+			}//closes h1 for intro
+		}//closes text intro
+	}//closes introContainer
+
+	.skillCertContainer{
+		background: #fffdde;
+		border-radius: 30px;
+		padding: 1%;
+		width: 100%;
+		box-sizing: border-box;
+	
+		.skillCertFlex{
+			display: flex;
+			justify-content: space-around;
+			box-sizing: border-box;
+
+
+			
+			
+
+		.skills{
+			background:radial-gradient(white, #ffdaa2);
+			border-radius: 30px;
+			width: 48%;
+			box-sizing: border-box;
+			padding: 5%;
+
+
 		
-			@media(max-width: 1024px) {
-				margin-bottom: 5%;
-			}//closes media for h2 at 1024px
-		}//closes h2
-		li {
-			padding: 10%;
-			color  : #242331;
-		
-			@media(max-width: 1024px) {
+
+			h2{
+				font-size: 2em;
+				padding: 2%;
+				color: #707070;
+				text-decoration: underline;
+				box-sizing: border-box;
 				text-align: center;
-			}//closes media ofr li at 1024px
-		}//close li
-	}//close .three
-}//closes .topContainer
+
+
+				
+			}//closes  h2
+
+			P{
+				padding: 2%;
+				color: #707070;
+				box-sizing: border-box;
+				text-align: center;
+			}//closes p
+
+			.backgroundTop{
+				background: #707070;
+				border: solid 2px #707070;
+				color: #ffdaa2;
+				padding: 3%;
+				border-radius: 20px;
+			}
+
+
+		}//closes skill
+
+	}//closes skilldcertcontainer
+
+
+		.certContainer{
+			border-radius: 30px;
+			background:radial-gradient(white,#ffdaa2);
+			width: 48%;
+			box-sizing: border-box;
+			padding: 5%;
+			text-align: center;
+
+
+
+			h2{
+				font-size: 2em;
+				padding: 3%;
+				color: #707070;
+				box-sizing: border-box;
+				text-decoration: underline;
+
+			}//closes  h2
+			P{
+				padding: 2%;
+				color: #707070;
+				box-sizing: border-box;
+
+				button{
+					background: #707070;
+					height: 5vh;
+					border-radius: 20px;
+					border: solid 2px #707070;
+					color: #ffdaa2;
+					width: 50%;
+				}
+
+			}//closes p
+
+			.backgroundTop{
+				background: #707070;
+				border: solid 2px #707070;
+				color: #ffdaa2;
+				padding: 3%;
+				border-radius: 20px;
+			}
+		}//closes certcontainer
+	}
+
+		.middleimg{
+			margin-top: 3%;
+			img{
+				width: 100%;
+				height: 30vh;
+				border-radius: 30px;
+			}//closes img
+		}//closes middleimg
+
+		.socialContactCont{
+			margin-top: 3%;
+			display: flex;
+			justify-content: space-around;
+
+			.socialMedia{
+				background: #313131;
+				width: 48%;
+				border-radius: 30px;
+
+
+				h2{
+					font-size: 1em;
+					padding: 3%;
+					color: #ffdaa2;
+					font-size: 1.5em;
+					
+				}//closes h2
+
+				p{
+					padding: 3%;
+					color: #ffdaa2;
+					font-size: 1em;
+				}//closes p
+			}//closes socialMedia
+
+			.contact{
+				background: #313131;
+				border-radius: 30px;
+				width: 48%;
+
+
+
+				h2{
+					padding: 2%;
+					color: #ffdaa2;
+					font-size: 1.5em;
+					
+				}//closes h2
+
+				p{
+					padding: 2%;
+					color: #ffdaa2;
+					font-size: 1em;
+
+					i{
+							a{
+								text-decoration: none;
+								color: #ffdaa2;
+						}
+					}
+				}//closes p
+		}//closes socialContact
+
+}//closesMainContainer
+
+}
